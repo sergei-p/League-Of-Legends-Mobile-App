@@ -10,7 +10,7 @@
 ---
 
 ## Description
-Android application that displays information about a summoner such as summoner level, match history, etc.
+Android application that displays information about a summoner such as summoner level, match history, general game info, champion info etc. 
 
 ## Technologies
 - Java
@@ -23,9 +23,9 @@ Android application that displays information about a summoner such as summoner 
 
 
 ## How to use
-In order to use the application, you must aquire an API key from the OpenWeather's website and add it on line 53 in MainActivity.java.
+In order to use the application, you must aquire an API key from Riot's Developer website https://developer.riotgames.com/ and add it on line 57 in MainActivity.java.
 
-`private static final String OPENWEATHER_APPID = " ";`
+`private String API_KEY = " ";`
 
 
 ---
