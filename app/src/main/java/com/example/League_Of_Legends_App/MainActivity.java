@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity
 
     private GameHistoryAdapter gameHistoryAdapter;
 
-    private String API_KEY = "RGAPI-d0f5ed5b-afff-49ac-ad32-8815eab36c57";
+    private String API_KEY = " ";
 
 
     private String API_BASE_URL;
