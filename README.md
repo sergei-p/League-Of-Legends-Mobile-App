@@ -10,7 +10,7 @@
 ---
 
 ## Description
-Android application that displays information about a summoner such as summoner level, match history, general game info, champion info etc. 
+Android application that displays information about a summoner such as summoner level, match history, general game info, champion info, etc. 
 
 ## Technologies
 - Java
