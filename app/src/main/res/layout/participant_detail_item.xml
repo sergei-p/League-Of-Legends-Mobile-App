@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_match_participant_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_margin="15px"
+            app:srcCompat="@drawable/ic_launcher_background" />
+        <TextView
+            android:id="@+id/tv_match_participant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/match_participant_name"
+            app:layout_constraintStart_toEndOf="@+id/iv_match_participant_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_match_participant_icon"
+            android:layout_marginStart="10px"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv_match_participant_champ_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/match_participant_champ_level"
+            app:layout_constraintStart_toEndOf="@+id/iv_match_participant_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_match_participant_name"
+            android:layout_marginStart="10px"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_match_participant_kills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/match_participant_kills"
+            app:layout_constraintEnd_toStartOf="@+id/tv_spacer_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10px"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_spacer_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:text="/"
+            app:layout_constraintEnd_toStartOf="@+id/tv_match_participant_deaths"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_match_participant_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/match_participant_deaths"
+            app:layout_constraintEnd_toStartOf="@+id/tv_spacer_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10px"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"/>
+        <TextView
+            android:id="@+id/tv_spacer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:text="/"
+            app:layout_constraintEnd_toStartOf="@+id/tv_match_participant_assists"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_match_participant_assists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/match_participant_assists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10px"
+            android:layout_marginStart="15px"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

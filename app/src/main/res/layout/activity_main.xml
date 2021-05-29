@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#FFBCBCBC"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <EditText
+        android:id="@+id/search_summoner_et"
+        android:layout_width="314dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Search Summoner..."
+        android:inputType="textPersonName"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--    app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"-->
+    <!--    app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"-->
+
+    <Button
+        android:id="@+id/search_button_b"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:backgroundTint="#292727"
+        app:icon="@android:drawable/ic_menu_search"
+        app:iconTint="#F4F0F0"
+        app:layout_constraintStart_toEndOf="@+id/search_summoner_et"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/summoner_info_ll"
+        android:layout_width="170dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical"
+
+        android:visibility="invisible"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_summoner_et">
+
+        <TextView
+            android:id="@+id/summoner_name_main_tv"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/summoner_icon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/summoner_level_header_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/level_header_text"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/summoner_level_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+
+            android:textColor="#716B6B" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/match_history_title_ll"
+        android:layout_width="375dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical"
+
+        android:visibility="invisible"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/summoner_info_ll"
+        app:layout_constraintTop_toBottomOf="@+id/summoner_info_ll">
+
+        <TextView
+            android:id="@+id/match_history_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/match_history_title"
+            android:textColor="#050505"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/match_history_container_ll"
+        android:layout_width="410dp"
+        android:layout_height="363dp"
+        android:orientation="vertical"
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_history_title_ll">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/match_history_rv"
+            android:layout_width="match_parent"
+            android:layout_height="355dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/error_message_main_tv"
+        android:layout_width="380dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:text="Error Message"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_summoner_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

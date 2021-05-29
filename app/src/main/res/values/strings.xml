@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">League Of Legends App</string>
+    <string name="title_home">Home</string>
+    <string name="title_champions">Champions</string>
+    <string name="title_settings">Settings</string>
+
+    //Main Activity
+    <string name="search_box_hint">Search Summoner Name...</string>
+    <string name="search_button_text">Do Search</string>
+    <string name="level_header_text">Level</string>
+    <string name="match_history_title">Match History></string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string-array name="available_servers">
+        <item>Korea</item>
+        <item>North America</item>
+        <item>Brazil</item>
+        <item>Europe West</item>
+        <item>Ocenia</item>
+        <item>Europe Nordic and East</item>
+    </string-array>
+
+    <string-array name="available_themes">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+
+
+
+    //Match Detail Activity
+    <string name="match_team0_win">Win/Loss</string>
+    <string name="match_team1_win">Win/Loss</string>
+    <string name="match_red">(Red)</string>
+    <string name="match_blue">(Blue)</string>
+
+    //Match Detail Participant Item
+    <string name="match_participant_name">Summoner_name</string>
+    <string name="match_participant_champ_level">Champ_Level</string>
+    <string name="match_participant_kills">K</string>
+    <string name="match_participant_deaths">D</string>
+    <string name="match_participant_assists">A</string>
+
+
+</resources>
